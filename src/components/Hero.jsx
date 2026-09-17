@@ -46,12 +46,12 @@ export default function Hero({ dark }) {
           </svg>
 
           <div style={{ display:"inline-block", background:c, color: dark?"#1a1a1a":"#f7f4ee", padding:"5px 18px", borderRadius:3, fontFamily:"'Patrick Hand',cursive", fontSize:"0.95rem", fontWeight:600, marginBottom:"1rem" }}>
-            Aspiring Software Engineer
+            Operations Support Engineer
           </div>
 
           <p style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"1.05rem", color:sub, lineHeight:1.8, marginBottom:"1.5rem", maxWidth:400 }}>
-            Passionate about building web applications and solving real-world problems through code.
-          </p>
+          Application Support • Production Support • QA Automation
+             </p>
 
           {/* Buttons */}
           <div style={{ display:"flex", gap:"0.8rem", marginBottom:"1.2rem", flexWrap:"wrap" }}>

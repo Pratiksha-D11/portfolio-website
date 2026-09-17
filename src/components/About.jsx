@@ -23,10 +23,7 @@ export default function About({ dark }) {
               <span style={{ fontSize:"1.4rem" }}>🙂</span>
             </div>
             <p style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"1.05rem", color: dark?"#ccc":"#444", lineHeight:2, position:"relative", zIndex:1 }}>
-             I'm a tech enthusiast who enjoys working with code 
-             and solving problems. Trained in Full Stack Web 
-             Development and open to exploring different roles 
-             in the software world. 💡
+             Operations Support Engineer with experience in application support, troubleshooting, SQL, API validation, production support and JavaScript-based development. Currently expanding my expertise in Playwright, React and AI-powered applications. 💡
               </p>
             <div style={{ textAlign:"right", marginTop:"1rem", fontSize:"1.2rem" }}>♡</div>
           </div>

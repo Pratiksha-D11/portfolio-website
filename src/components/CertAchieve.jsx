@@ -70,16 +70,127 @@ export default function CertAchieve({ dark }) {
           </div>
         </FadeIn>
 
+       
+
+        <FadeIn delay={0.1}>
+  <div
+    className="sketch-card wiggle-card"
+    style={{
+      padding: "1.6rem 1.6rem 1.6rem 2rem",
+      position: "relative",
+      background: dark ? "#2a2a2a" : "#fffef9",
+      borderColor: c,
+      boxShadow: `3px 3px 0 ${c}`,
+    }}
+  >
+    <Tape color={dark ? "#555" : "#d4d0c8"} rotate={-3} />
+
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: 8,
+        marginBottom: "1rem",
+      }}
+    >
+      <span style={{ fontSize: "1.3rem" }}>💼</span>
+
+      <h3
+        style={{
+          fontFamily: "'Caveat',cursive",
+          fontSize: "1.5rem",
+          fontWeight: 700,
+          color: c,
+        }}
+      >
+        Experience
+      </h3>
+    </div>
+
+    {[
+      {
+        role: "Operations Support Engineer",
+        company: "BlueCoin IoT Solutions Pvt. Ltd.",
+        year: "Dec 2024 – Present",
+        focus: "Application Support • Production Support • SQL • APIs",
+        icon: "💻",
+      },
+      {
+        role: "Trainee Programmer",
+        company: "Bitwise Solutions",
+        year: "Apr 2022 – Jan 2023",
+        focus: "SharePoint • JavaScript • REST API • PowerShell",
+        icon: "👨‍💻",
+      },
+    ].map((exp, i) => (
+      <div
+        key={i}
+        style={{
+          display: "flex",
+          alignItems: "flex-start",
+          gap: 10,
+          padding: "0.8rem",
+          background: dark ? "#1a1a1a" : "#f7f4ee",
+          border: `1.5px solid ${c}`,
+          borderRadius: 4,
+          marginBottom: "0.8rem",
+        }}
+      >
+        <span style={{ fontSize: "1.2rem" }}>{exp.icon}</span>
+
+        <div>
+          <p
+            style={{
+              fontFamily: "'Caveat',cursive",
+              fontSize: "1.1rem",
+              fontWeight: 700,
+              color: c,
+              marginBottom: "0.15rem",
+            }}
+          >
+            {exp.role}
+          </p>
+
+          <p
+            style={{
+              fontFamily: "'Patrick Hand',cursive",
+              fontSize: "0.9rem",
+              color: dark ? "#bbb" : "#666",
+              marginBottom: "0.15rem",
+            }}
+          >
+            {exp.company}
+          </p>
+
+          <p
+            style={{
+              fontFamily: "'Patrick Hand',cursive",
+              fontSize: "0.85rem",
+              color: dark ? "#888" : "#999",
+              marginBottom: "0.35rem",
+            }}
+          >
+            {exp.year}
+          </p>
+
+          <p
+            style={{
+              fontFamily: "'Patrick Hand',cursive",
+              fontSize: "0.8rem",
+              color: dark ? "#aaa" : "#777",
+              lineHeight: 1.4,
+            }}
+          >
+            {exp.focus}
+          </p>
+        </div>
+      </div>
+    ))}
+  </div>
+</FadeIn>
+
         {/* Quote sticky note */}
-        <FadeIn delay={0.2} style={{ gridColumn: isTablet && !isMobile ? "1 / -1" : undefined }}>
-          <div className="dashed-card wiggle-card" style={{ padding:"2rem 1.5rem", textAlign:"center", background: dark?"#2d2a1a":"#fffbdd", borderColor: dark?"#888":"#c8a800" }}>
-            <Tape color="#e8d44d"/>
-            <p style={{ fontFamily:"'Caveat',cursive", fontSize:"1.5rem", fontWeight:700, color: dark?"#f0e080":"#5a4800", lineHeight:1.6 }}>
-              "Code.<br/>Learn.<br/>Build.<br/>Repeat."
-            </p>
-            <div style={{ marginTop:"0.8rem", fontSize:"1rem", color: dark?"#f0e080":"#c8a800" }}>♡</div>
-          </div>
-        </FadeIn>
+       
 
       </div>
     </section>
