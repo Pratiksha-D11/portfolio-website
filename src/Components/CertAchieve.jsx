@@ -25,36 +25,46 @@ export default function CertAchieve({ dark }) {
               <h3 style={{ fontFamily:"'Caveat',cursive", fontSize:"1.5rem", fontWeight:700, color:c }}>Certifications</h3>
             </div>
             {[
-              "Responsive Web Design – freeCodeCamp",
-              "JavaScript Algorithms – freeCodeCamp",
-              "React.js – Udemy",
-              "Git & GitHub – Coursera"
+              "Full Stack Web Development by Tap Academy, 2023"
             ].map((cert,i) => (
               <div key={i} style={{ display:"flex", alignItems:"flex-start", gap:8, marginBottom:"0.6rem" }}>
                 <span style={{ color:c, marginTop:2 }}>•</span>
-                <span style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"0.88rem", color: dark?"#bbb":"#555", lineHeight:1.6 }}>{cert}</span>
+                <span style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"0.95rem", color: dark?"#bbb":"#555", lineHeight:1.6 }}>{cert}</span>
               </div>
             ))}
             <SparkDoodle style={{ position:"absolute", bottom:12, right:12, opacity:0.4 }}/>
           </div>
         </FadeIn>
 
-        {/* Achievements */}
+         {/* Education */}
         <FadeIn delay={0.1}>
           <div className="sketch-card wiggle-card" style={{ padding:"1.6rem 1.6rem 1.6rem 2rem", position:"relative", background: dark?"#2a2a2a":"#fffef9", borderColor:c, boxShadow:`3px 3px 0 ${c}` }}>
             <Tape color={dark?"#555":"#d4d0c8"} rotate={-3}/>
             <div style={{ display:"flex", alignItems:"center", gap:8, marginBottom:"1rem" }}>
-              <span style={{ fontSize:"1.3rem" }}>🏆</span>
-              <h3 style={{ fontFamily:"'Caveat',cursive", fontSize:"1.5rem", fontWeight:700, color:c }}>Achievements</h3>
+              <span style={{ fontSize:"1.3rem" }}>📚</span>
+              <h3 style={{ fontFamily:"'Caveat',cursive", fontSize:"1.5rem", fontWeight:700, color:c }}>Education</h3>
             </div>
             {[
-              "Solved 300+ problems on LeetCode",
-              "5⭐ in problem solving on HackerRank",
-              "Participated in Smart India Hackathon 2023"
-            ].map((a,i) => (
-              <div key={i} style={{ display:"flex", alignItems:"flex-start", gap:8, marginBottom:"0.6rem" }}>
-                <span style={{ color:c, marginTop:2 }}>•</span>
-                <span style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"0.88rem", color: dark?"#bbb":"#555", lineHeight:1.6 }}>{a}</span>
+              {
+                degree: "MSC Computer Science",  // ← update this
+                college: "Vishwakarma College of Arts Commerce and Science",          // ← update this
+                year: "2021 – 2023",                  // ← update this
+                icon: "🎓"
+              },
+              {
+                degree: " BSC Computer Science",     // ← update this
+                college: "Vishwakarma College of Arts Commerce and Science",          // ← update this
+                year: "2018 – 2021",                  // ← update this
+                icon: "🎓"
+              },
+            ].map((edu, i) => (
+              <div key={i} style={{ display:"flex", alignItems:"flex-start", gap:10, padding:"0.8rem", background: dark?"#1a1a1a":"#f7f4ee", border:`1.5px solid ${c}`, borderRadius:4, marginBottom:"0.8rem" }}>
+                <span style={{ fontSize:"1.2rem" }}>{edu.icon}</span>
+                <div>
+                  <p style={{ fontFamily:"'Caveat',cursive", fontSize:"1.1rem", fontWeight:700, color:c }}>{edu.degree}</p>
+                  <p style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"0.9rem", color: dark?"#bbb":"#666" }}>{edu.college}</p>
+                  <p style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"0.85rem", color: dark?"#888":"#999" }}>{edu.year}</p>
+                </div>
               </div>
             ))}
           </div>

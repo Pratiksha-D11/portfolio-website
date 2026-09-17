@@ -16,10 +16,10 @@ export default function Hero({ dark }) {
 
   return (
     <section id="home" className="nb-bg" style={{
-      padding: isMobile ? "2rem 1.2rem" : "2.5rem 3rem",
-      paddingBottom: "3rem",
+      paddingTop: isMobile ? "5rem" : "6.5rem",
+      paddingBottom: "2rem",
       background: dark ? "#1a1a1a" : undefined,
-      minHeight: "80vh",
+      minHeight: "70vh",
       display: "flex", alignItems: "center"
     }}>
       <div style={{
@@ -49,7 +49,7 @@ export default function Hero({ dark }) {
             Aspiring Software Engineer
           </div>
 
-          <p style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"0.95rem", color:sub, lineHeight:1.8, marginBottom:"1.5rem", maxWidth:400 }}>
+          <p style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"1.05rem", color:sub, lineHeight:1.8, marginBottom:"1.5rem", maxWidth:400 }}>
             Passionate about building web applications and solving real-world problems through code.
           </p>
 

@@ -50,7 +50,7 @@ export default function Contact({ dark }) {
             <h2 style={{ fontFamily:"'Caveat',cursive", fontSize:"2rem", fontWeight:700, color:c }}>Contact Me</h2>
           </div>
           <DrawUnderline width={160} color={c} style={{ marginBottom:"1rem" }}/>
-          <p style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"0.95rem", color: dark?"#bbb":"#555", lineHeight:1.8, marginBottom:"1.5rem" }}>
+          <p style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"1.05rem", color: dark?"#bbb":"#555", lineHeight:1.8, marginBottom:"1.5rem" }}>
             I'm always open to discussing new projects, creative ideas or opportunities. ♡
           </p>
           {[
@@ -105,7 +105,7 @@ export default function Contact({ dark }) {
                   placeholder="Your Email"
                   value={form.email}
                   onChange={e => setForm(p => ({ ...p, email: e.target.value }))}
-                  style={{ width:"100%", padding:"10px 14px", fontFamily:"'Patrick Hand',cursive", fontSize:"0.92rem", border:`1.5px solid ${c}`, borderRadius:3, background: dark?"#1a1a1a":"#fffef9", color:c, outline:"none" }}
+                  style={{ width:"100%", padding:"10px 14px", fontFamily:"'Patrick Hand',cursive", fontSize:"1rem", border:`1.5px solid ${c}`, borderRadius:3, background: dark?"#1a1a1a":"#fffef9", color:c, outline:"none" }}
                 />
               </div>
 
@@ -116,7 +116,7 @@ export default function Contact({ dark }) {
                   placeholder="Your Message"
                   value={form.msg}
                   onChange={e => setForm(p => ({ ...p, msg: e.target.value }))}
-                  style={{ width:"100%", padding:"10px 14px", fontFamily:"'Patrick Hand',cursive", fontSize:"0.92rem", border:`1.5px solid ${c}`, borderRadius:3, background: dark?"#1a1a1a":"#fffef9", color:c, outline:"none", resize:"vertical" }}
+                  style={{ width:"100%", padding:"10px 14px", fontFamily:"'Patrick Hand',cursive", fontSize:"1rem", border:`1.5px solid ${c}`, borderRadius:3, background: dark?"#1a1a1a":"#fffef9", color:c, outline:"none", resize:"vertical" }}
                 />
               </div>
 

@@ -19,13 +19,15 @@ export default function About({ dark }) {
               ))}
             </div>
             <div style={{ display:"flex", justifyContent:"space-between", alignItems:"flex-start", marginBottom:"1rem" }}>
-              <h2 style={{ fontFamily:"'Caveat',cursive", fontSize:"1.8rem", fontWeight:700, color:c }}>About Me</h2>
+              <h2 style={{ fontFamily:"'Caveat',cursive", fontSize:"1.8rem", fontWeight:700, color:c,height: "100%" }}>About Me</h2>
               <span style={{ fontSize:"1.4rem" }}>🙂</span>
             </div>
-            <p style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"0.95rem", color: dark?"#ccc":"#444", lineHeight:2, position:"relative", zIndex:1 }}>
-              I'm an aspiring Software Engineer who loves turning ideas into reality using code.
-              I enjoy building web applications, learning new technologies and constantly improving my problem-solving skills.
-            </p>
+            <p style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"1.05rem", color: dark?"#ccc":"#444", lineHeight:2, position:"relative", zIndex:1 }}>
+             I'm a tech enthusiast who enjoys working with code 
+             and solving problems. Trained in Full Stack Web 
+             Development and open to exploring different roles 
+             in the software world. 💡
+              </p>
             <div style={{ textAlign:"right", marginTop:"1rem", fontSize:"1.2rem" }}>♡</div>
           </div>
         </FadeIn>
@@ -44,11 +46,11 @@ export default function About({ dark }) {
               { icon:"🎓", text:"MSC Computer Science , BSC Computer Science" },
               { icon:"📍", text:"Pune, India" },
               { icon:"♡",  text:"Interests: Passionate about Web Development and Software Engineering , Enjoy solving problems and creating intuitive user experiences" },
-              { icon:"🎯", text:"Goal: Skilled developer working on impactful solutions." },
+              { icon:"🎯", text:"Goal: To contribute to real-world projects and grow in the software industry." },
             ].map(({ icon, text }, i) => (
               <div key={i} style={{ display:"flex", alignItems:"flex-start", gap:10, paddingBottom:"0.8rem", marginBottom:"0.8rem", borderBottom: i<3?`1px solid ${dark?"#444":"#d4d0c8"}`:"none", paddingLeft:18 }}>
                 <span style={{ fontSize:"1rem", minWidth:20 }}>{icon}</span>
-                <span style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"0.9rem", color: dark?"#ccc":"#444", lineHeight:1.6 }}>{text}</span>
+                <span style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"1.05rem", color: dark?"#ccc":"#444", lineHeight:1.6 }}>{text}</span>
               </div>
             ))}
           </div>

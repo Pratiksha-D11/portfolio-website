@@ -19,14 +19,14 @@ export const Paperclip = () => (
 export const StarDoodle = ({ size = 20, style: s = {} }) => (
   <svg width={size} height={size} viewBox="0 0 24 24" style={s}>
     <path d="M12 2 L13.5 9 L20 9 L14.5 13.5 L16.5 20 L12 16 L7.5 20 L9.5 13.5 L4 9 L10.5 9 Z"
-      stroke="#2a2a2a" strokeWidth="1.5" fill="none" strokeLinejoin="round"/>
+      stroke="currentColor" strokeWidth="1.5" fill="none" strokeLinejoin="round"/>
   </svg>
 );
 
 export const SparkDoodle = ({ style: s = {} }) => (
   <svg width="18" height="18" viewBox="0 0 18 18" style={s}>
     {[[9,1,9,5],[9,13,9,17],[1,9,5,9],[13,9,17,9],[3,3,6,6],[12,12,15,15],[15,3,12,6],[3,15,6,12]].map(([x1,y1,x2,y2],i) => (
-      <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="#2a2a2a" strokeWidth="1.5" strokeLinecap="round"/>
+      <line key={i} x1={x1} y1={y1} x2={x2} y2={y2} stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
     ))}
   </svg>
 );

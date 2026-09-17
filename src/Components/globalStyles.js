@@ -60,7 +60,7 @@ export const GLOBAL_CSS = `
     padding: 10px 8px;
     gap: 6px;
     font-family: 'Patrick Hand', cursive;
-    font-size: 0.78rem;
+    font-size: 0.85rem;
     color: #2a2a2a;
     min-width: 70px;
   }

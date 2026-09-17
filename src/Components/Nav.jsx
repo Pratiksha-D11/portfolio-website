@@ -25,9 +25,11 @@ export default function Nav({ dark, setDark }) {
       }}>
         {/* Logo */}
         <div style={{ display:"flex", alignItems:"center", gap:5 }}>
-          <SparkDoodle />
-          <span style={{ fontFamily:"'Caveat',cursive", fontSize:"1.7rem", fontWeight:700, color:c, letterSpacing:1 }}>PD</span>
-          <SparkDoodle />
+         <div style={{ display:"flex", alignItems:"center", gap:5 }}>
+  <SparkDoodle style={{ color: c }}/>
+  <span style={{ fontFamily:"'Caveat',cursive", fontSize:"1.7rem", fontWeight:700, color:c, letterSpacing:1 }}>PD</span>
+  <SparkDoodle style={{ color: c }}/>
+</div>
         </div>
 
         {/* Desktop links */}

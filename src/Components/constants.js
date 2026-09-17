@@ -6,26 +6,32 @@ export const SKILLS = [
   { name: "Node.js",    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" },
   { name: "Git",        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" },
   { name: "MySQL",      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" },
-  { name: "C++",        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
+ // { name: "C++",        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" },
 ];
 
 export const PROJECTS = [
   {
-    title: "Task Manager", icon: "📋",
-    desc: "A task management app to add, update, delete and track daily tasks efficiently.",
-    tags: ["React", "Node.js", "MongoDB"],
-    demo: "#", github: "#",
-  },
+  title: "AI Event Planner",
+  icon: "🤖",
+ desc: "An AI-powered event planning app that generates personalized event plans based on user requirements. Currently in progress 🚧",
+  tags: ["React", "Node.js", "Express", "Gemini API"],
+  demo: "#",
+  github: "https://github.com/Pratiksha-D11/ai-event-planner-app",
+},
+ {
+  title: "JavaScript Mini Projects",
+  icon: "🧩",
+  desc: "A collection of small web projects built to practice JavaScript, DOM manipulation, APIs and frontend development.",
+  tags: ["JavaScript", "HTML", "CSS", "APIs"],
+  demo: "#",
+  github: "https://github.com/Pratiksha-D11/Mini-Projects",
+},
   {
-    title: "Weather App", icon: "🌤️",
-    desc: "A weather app that shows real-time weather updates of any city using weather API.",
-    tags: ["React", "API", "CSS"],
-    demo: "#", github: "#",
-  },
-  {
-    title: "Chat Application", icon: "💬",
-    desc: "A real-time chat application where users can send and receive messages instantly.",
-    tags: ["React", "Socket.io", "Node.js"],
-    demo: "#", github: "#",
+   title: "Developer Portfolio",
+  icon: "🎨",
+  desc: "A doodle themed personal portfolio website built with React. Features dark mode, animations and responsive design.",
+  tags: ["React", "CSS", "Vite"],
+  demo: "#",
+  github: "https://github.com/Pratiksha-011/my-portfolio",
   },
 ];

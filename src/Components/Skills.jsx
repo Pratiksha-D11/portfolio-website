@@ -12,9 +12,9 @@ export default function Skills({ dark }) {
       <div style={{ maxWidth:1100, margin:"0 auto" }}>
         <FadeIn>
           <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:4 }}>
-            <StarDoodle size={26}/>
+            <StarDoodle size={26} style={{ color: c }}/>
             <h2 style={{ fontFamily:"'Caveat',cursive", fontSize:"2rem", fontWeight:700, color:c }}>Skills</h2>
-            <SparkDoodle style={{ marginLeft:6 }}/>
+            <SparkDoodle style={{ marginLeft:6, color: c }}/>
           </div>
           <DrawUnderline width={100} color={c} style={{ marginBottom:"1.6rem" }}/>
         </FadeIn>

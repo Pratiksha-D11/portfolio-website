@@ -25,8 +25,8 @@ function ProjectCard({ title, icon, desc, tags, demo, github, dark, delay }) {
           ))}
         </div>
         <div style={{ display:"flex", gap:"1.5rem", position:"relative", zIndex:1 }}>
-          <a href={demo}   style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"0.85rem", color:c, textDecoration:"none", borderBottom:`1.5px solid ${c}` }}>Live Demo ↗</a>
-          <a href={github} style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"0.85rem", color:c, textDecoration:"none", borderBottom:`1.5px solid ${c}` }}>GitHub ↗</a>
+          <a href={demo}   style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"0.95rem", color:c, textDecoration:"none", borderBottom:`1.5px solid ${c}` }}>Live Demo ↗</a>
+          <a href={github} style={{ fontFamily:"'Patrick Hand',cursive", fontSize:"0.95rem", color:c, textDecoration:"none", borderBottom:`1.5px solid ${c}` }}>GitHub ↗</a>
         </div>
       </div>
     </FadeIn>
